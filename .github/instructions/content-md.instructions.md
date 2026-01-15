@@ -1,5 +1,5 @@
 ---
-applyTo: "/src/content/blog/*.md"
+applyTo: "/src/data/blog/*.md"
 ---
 
 # Blog Content Creation Instructions
@@ -8,7 +8,7 @@ This document outlines the guidelines and structure for creating blog posts in A
 
 ## File Structure and Naming
 
-- **Location**: All blog posts must be placed in `src/content/blog/`
+- **Location**: All blog posts must be placed in `src/data/blog/`
 - **File Extension**: Use `.md` for standard markdown or `.mdx` for markdown with JSX components
 - **Naming Convention**: Use kebab-case for filenames (e.g., `my-awesome-blog-post.md`)
 - **Slug**: The filename will be used as the URL slug unless overridden in frontmatter

@@ -99,7 +99,7 @@ Prioritized list of specific improvements to make, ordered by importance
 
 This blog focuses on:
 
-- **Audience**: Software developers, particularly those interested in web development, AI tools, and productivity
+- **Audience**: Software developers, particularly those interested in azure cloud services, AI tools, and productivity
 - **Tone**: Professional yet approachable, educational but not condescending
 - **Technical depth**: Practical examples with enough detail to be actionable
 - **Value**: Each post should provide genuine value and actionable insights
