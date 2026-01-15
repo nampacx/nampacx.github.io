@@ -15,6 +15,8 @@ When I'm not writing code or blog posts, you'll find me riding my mountain bike 
 
 This blog is built with [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/), providing a fast, accessible, and SEO-friendly platform for sharing technical content with the developer community.
 
+The blog is also based on the work of Harral Binkel from Xebia. You can learn more about his work at [harrybin.de](https://harrybin.de).
+
 ## Get in Touch
 
 Feel free to connect with me through the social links in the footer, or reach out if you'd like to discuss technology, collaborate on projects, or just say hello!

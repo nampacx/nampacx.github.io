@@ -1,9 +1,9 @@
 export const SITE = {
-  website: "https://astro-paper.pages.dev/", // replace this with your deployed domain
+  website: "https://mikokono.de/", // replace this with your deployed domain
   author: "Michael Kokonowskyj",
-  profile: "https://satnaing.dev/",
+  profile: "https://mikokono.de/",
   desc: "My dev blog",
-  title: "nampacx",
+  title: "mikokono",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: false,
   postPerIndex: 4,  postPerPage: 10,
@@ -12,8 +12,6 @@ export const SITE = {
   showBackButton: true, // show back button in post detail
   editPost: {
     enabled: false,
-    text: "Edit page",
-    url: "https://github.com/satnaing/astro-paper/edit/main/",
   },
   dynamicOgImage: true,
   dir: "ltr", // "rtl" | "auto"
