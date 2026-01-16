@@ -12,7 +12,7 @@ tags:
   - automation
   - infrastructure-as-code
   - ai-agents
-description: Learn how to automate the deployment of Azure AI Foundry agents using YAML configuration files with this open-source .NET tool for infrastructure-as-code agent management.
+description: Learn how to automate the deployment of Azure AI Foundry agents using YAML configuration files with this open-source .NET tool that brings a declarative, IaC-inspired approach to agent management.
 ---
 
 ## 🚧 The Challenge with AI Foundry Agent Management
@@ -25,7 +25,7 @@ I faced these exact challenges while building multi-agent systems for Azure AI F
 
 ## ✨ Introducing DeployAgent
 
-[DeployAgent](https://github.com/nampacx/Microsoft-Foundry-Agent-Deployment) is an open-source tool that automates the deployment and management of Microsoft Foundry Agents using YAML configuration files. Think of it as Infrastructure as Code for your AI agents—define your agents declaratively, version them in git, and deploy them with a single command.
+[DeployAgent](https://github.com/nampacx/Microsoft-Foundry-Agent-Deployment) is an open-source tool that automates the deployment and management of Microsoft Foundry Agents using YAML configuration files. It brings a declarative, IaC-inspired approach to AI agent management—define your agents in YAML, version them in git, and deploy them with a single command.
 
 ### Key Features
 
@@ -222,11 +222,11 @@ Some ideas for future improvements:
 - Template and reusable configuration patterns
 - Migration tooling for the new portal format
 
-If you're working with Azure AI Foundry agents and frustrated by the lack of IaC support, give DeployAgent a try. Contributions, issues, and feedback are welcome on [GitHub](https://github.com/nampacx/Microsoft-Foundry-Agent-Deployment).
+If you're working with Azure AI Foundry agents and want a declarative, version-controlled approach to agent deployment, give DeployAgent a try. Contributions, issues, and feedback are welcome on [GitHub](https://github.com/nampacx/Microsoft-Foundry-Agent-Deployment).
 
 ## 🎁 Wrapping Up
 
-Infrastructure as Code isn't just for virtual machines and databases—it's equally important for AI agents. By treating agent configurations as code, we get all the benefits of modern DevOps practices: version control, code review, automated testing, and reliable deployments.
+Declarative configuration management isn't just for virtual machines and databases—it's equally valuable for AI agents. By treating agent configurations as code with an IaC-inspired approach, we get all the benefits of modern DevOps practices: version control, code review, automated testing, and reliable deployments.
 
 DeployAgent is my answer to this need in the Azure AI Foundry classic portal. It's not perfect, and it's opinionated, but it's working in production and solving real problems.
 
