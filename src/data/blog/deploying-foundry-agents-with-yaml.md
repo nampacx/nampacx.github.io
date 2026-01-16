@@ -14,6 +14,8 @@ tags:
   - ai-agents
 description: Learn how to automate the deployment of Azure AI Foundry agents using YAML configuration files with this open-source .NET tool that brings a declarative, IaC-inspired approach to agent management.
 ---
+## 📦 GH repository:
+[https://github.com/nampacx/Microsoft-Foundry-Agent-Deployment](https://github.com/nampacx/Microsoft-Foundry-Agent-Deployment) 
 
 ## 🚧 The Challenge with AI Foundry Agent Management
 
