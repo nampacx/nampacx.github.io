@@ -1,6 +1,6 @@
 ---
 author: Michael Kokonowskyj
-pubDatetime: 2025-01-15T10:00:00Z
+pubDatetime: 2026-01-15T10:00:00Z
 title: Hello World - Welcome to My Developer Journey
 postSlug: hello-world-welcome
 featured: true
