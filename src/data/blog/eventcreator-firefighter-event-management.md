@@ -1,7 +1,7 @@
 ---
 author: Michael Kokonowskyj
 pubDatetime: 2026-01-21T10:00:00Z
-title: "EventCreator: Simple Calendar Event Management for Volunteer Groups"
+title: "EventCreator: Simple Calendar Event Management "
 postSlug: eventcreator-firefighter-event-management
 featured: true
 draft: false
@@ -11,7 +11,7 @@ tags:
   - static-web-app
   - ics
   - calendar
-description: A simple React web app for volunteer firefighters to create and manage calendar events with CSV bulk import and ICS file generation.
+description: A simple React web app to create and manage calendar events with CSV bulk import and ICS file generation.
 ---
 
 [GitHub Repository](https://github.com/nampacx/EventCreator-WebApp)
