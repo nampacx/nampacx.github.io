@@ -1,6 +1,6 @@
 ---
 author: Michael Kokonowskyj
-pubDatetime: 2026-03-22T11:00:00Z
+pubDatetime: 2026-03-22T08:00:00Z
 title: "Two Lines of Code: Building an A2A Agent with .NET and Microsoft Agent Framework"
 postSlug: building-a2a-agent-dotnet-maf
 featured: true
