@@ -3,7 +3,7 @@ author: Michael Kokonowskyj
 pubDatetime: 2026-03-22T12:00:00Z
 title: "Train Ride Experiment: Integrating an A2A Agent into Copilot Studio"
 postSlug: integrating-a2a-agent-copilot-studio
-featured: false
+featured: true
 draft: false
 tags:
   - azure

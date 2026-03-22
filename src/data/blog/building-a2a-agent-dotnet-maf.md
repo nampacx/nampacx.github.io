@@ -3,7 +3,7 @@ author: Michael Kokonowskyj
 pubDatetime: 2026-03-22T11:00:00Z
 title: "Two Lines of Code: Building an A2A Agent with .NET and Microsoft Agent Framework"
 postSlug: building-a2a-agent-dotnet-maf
-featured: false
+featured: true
 draft: false
 tags:
   - azure
@@ -16,8 +16,6 @@ tags:
   - nampacx
 description: How I built and deployed an A2A-compliant agent with .NET and Microsoft Agent Framework — and why the wiring was literally two lines of code.
 ---
-
-## Table of contents
 
 ## 🚂 Some Context First
 
