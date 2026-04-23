@@ -4,7 +4,7 @@ applyTo: "/src/data/blog/*.md"
 
 # Blog Content Creation Instructions
 
-This document outlines the guidelines and structure for creating blog posts in Astro markdown files for the harrybin developer blog.
+This document outlines the guidelines and structure for creating blog posts in Astro markdown files for the mikokono blog.
 
 ## File Structure and Naming
 
@@ -50,10 +50,12 @@ description: A brief description of your blog post that appears in meta tags and
 
 ### Writing Style
 
-- Write in a conversational, developer-friendly tone
+- Write in a conversational, developer-friendly, more relaxed and funny tone
 - Use clear, concise language
 - Include practical examples and code snippets
 - Explain technical concepts with context
+- Try to break down complex ideas into simple steps 
+- Use humor and personal anecdotes where appropriate to engage readers
 
 ### Structure
 
@@ -97,11 +99,10 @@ function example(): string {
 
 Common tags to use:
 
-- **Languages**: `react`, `typescript`, `javascript`, `astro`, `css`, `c#`, `python`
-- **Frameworks**: `nextjs`, `astro`, `mui`, `tailwind`
+- **Languages**: `react`, `typescript`, `c#`, `python`
 - **Tools**: `github`, `vscode`, `docker`, `testing`
-- **Services**: `power platform`, `azure`, `foundry`, 
-- **Personal**: `michaelkokonowskyj`, `speaking`, `events`, `nampacx`, `mikokono`
+- **Services**: `power platform`, `azure`, `foundry`, `copilot`
+- **Personal**: `michaelkokonowskyj`, `nampacx`, `mikokono`
 
 ## SEO Best Practices
 
