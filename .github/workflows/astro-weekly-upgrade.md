@@ -12,13 +12,14 @@ safe-outputs:
   create-pull-request:
     max: 1
     allowed-files:
-      - ASTRO_UPGRADE_PLAN.md
-      - astro.config.ts
-      - package.json
-      - package-lock.json
-      - pnpm-lock.yaml
-      - tsconfig.json
-      - yarn.lock
+      - "src/**"
+      - "*.md"
+      - "astro.config.ts"
+      - "tsconfig.json"
+      - "package.json"
+      - "package-lock.json"
+      - "pnpm-lock.yaml"
+      - "yarn.lock"
     protected-files:
       policy: blocked
       exclude:
