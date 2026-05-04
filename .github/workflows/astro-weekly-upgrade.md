@@ -11,15 +11,6 @@ tools:
 safe-outputs:
   create-pull-request:
     max: 1
-    allowed-files:
-      - "src/**"
-      - "*.md"
-      - "astro.config.ts"
-      - "tsconfig.json"
-      - "package.json"
-      - "package-lock.json"
-      - "pnpm-lock.yaml"
-      - "yarn.lock"
     protected-files:
       policy: blocked
       exclude:
