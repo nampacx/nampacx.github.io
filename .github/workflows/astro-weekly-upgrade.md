@@ -19,6 +19,13 @@ safe-outputs:
       - pnpm-lock.yaml
       - tsconfig.json
       - yarn.lock
+    protected-files:
+      policy: blocked
+      exclude:
+        - package.json
+        - package-lock.json
+        - pnpm-lock.yaml
+        - yarn.lock
   noop:
 network:
   allowed:
