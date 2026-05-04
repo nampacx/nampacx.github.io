@@ -12,9 +12,12 @@ safe-outputs:
   create-pull-request:
     max: 1
     allowed-files:
+      - ASTRO_UPGRADE_PLAN.md
+      - astro.config.ts
       - package.json
       - package-lock.json
       - pnpm-lock.yaml
+      - tsconfig.json
       - yarn.lock
   noop:
 network:
