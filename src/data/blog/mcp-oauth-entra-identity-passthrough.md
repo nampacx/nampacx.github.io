@@ -23,11 +23,13 @@ You know how it goes. You have a simple idea. "I just want to know *who* is call
 
 **Right?**
 
-After a weekend of fighting with JWT validators, RFC discovery documents, and Entra ID app registrations, I emerged on the other side with a working solution — and a much deeper appreciation for how OAuth actually works in a real-world MCP scenario. The repo is here: [nampacx/MCP-OAuth-Entra](https://github.com/nampacx/MCP-OAuth-Entra)
+![Right?](../../assets/images/mcp%20oauth/right.png)
+
+Turns out it was a great experiment — I followed the MCP spec and Microsoft Foundry documentation to see how far they'd take me, and they took me pretty far. The repo is here: [nampacx/MCP-OAuth-Entra](https://github.com/nampacx/MCP-OAuth-Entra)
 
 The original motivation was twofold:
 
-1. I wanted to know which user is making calls to my MCP tool — not just "some service", but the actual person behind the request
+1. I wanted to know which user is making calls to my MCP tool — not just "some service", but the actual person behind the request. And beyond just knowing who they are, I wanted a foundation for later accessing Azure resources protected by RBAC on behalf of that user, where permissions are tied to their identity, not a shared service principal
 2. I wanted to wire this up in **Microsoft Foundry**, my beloved AI platform, to understand how Foundry manages MCP connections and user context
 
 Simple idea. Long journey. Worth every minute.
@@ -368,7 +370,7 @@ A few things that took longer to figure out than I'd like to admit:
 
 ## 🎯 Wrapping Up
 
-What started as "I just want to know who the user is" turned into a thorough education on OAuth resource servers, RFC 9728 discovery, the OBO flow, and Microsoft Foundry's identity passthrough model. Not what I planned for the weekend, but honestly one of the more satisfying rabbit holes I've gone down recently.
+What started as "I just want to know who the user is" turned into a thorough education on OAuth resource servers, RFC 9728 discovery, the OBO flow, and Microsoft Foundry's identity passthrough model. Not what I planned for the day, but honestly one of the more satisfying rabbit holes I've gone down recently.
 
 The patterns here — JWT validation, PRM discovery, OBO exchange, Key Vault for secrets — are reusable for any MCP server that needs real user identity rather than service-level access. And if you're building on Microsoft Foundry, identity passthrough means you can carry that user context all the way through your agent's tool calls without any extra plumbing.
 
