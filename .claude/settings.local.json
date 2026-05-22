@@ -1,7 +1,14 @@
 {
   "permissions": {
     "allow": [
-      "Bash(gh api *)"
+      "Bash(gh api *)",
+      "PowerShell(pnpm list astro --depth=0 2>&1)",
+      "WebFetch(domain:docs.astro.build)",
+      "PowerShell(node --version)",
+      "PowerShell(pnpm install 2>&1)",
+      "PowerShell(pnpm astro check 2>&1)",
+      "PowerShell(pnpm add zod 2>&1)",
+      "PowerShell(pnpm astro build 2>&1)"
     ]
   }
 }
