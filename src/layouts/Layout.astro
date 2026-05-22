@@ -205,8 +205,8 @@ const structuredData = {
         (function (c, l, a, r, i, t, y) {
           c[a] =
             c[a] ||
-            function () {
-              (c[a].q = c[a].q || []).push(arguments);
+            function (...args) {
+              (c[a].q = c[a].q || []).push(args);
             };
           t = l.createElement(r);
           t.async = 1;
@@ -220,8 +220,8 @@ const structuredData = {
         window.clarityQueue = window.clarityQueue || [];
         window.clarity =
           window.clarity ||
-          function () {
-            clarityQueue.push(arguments);
+          function (...args) {
+            clarityQueue.push(args);
           };
         window.clarity("identify", clarityUserId, undefined, clarityPageId);
       }
