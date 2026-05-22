@@ -23,7 +23,7 @@ You know how it goes. You have a simple idea. "I just want to know *who* is call
 
 **Right?**
 
-![Right?](../../assets/images/mcp%20oauth/right.png)
+![Right?](../../assets/images/mcp%20oauth/right.jpg)
 
 Turns out it was a great experiment — I followed the MCP spec and Microsoft Foundry documentation to see how far they'd take me, and they took me pretty far. The repo is here: [nampacx/MCP-OAuth-Entra](https://github.com/nampacx/MCP-OAuth-Entra)
 
