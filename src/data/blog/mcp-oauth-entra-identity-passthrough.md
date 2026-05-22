@@ -3,7 +3,7 @@ author: Michael Kokonowskyj
 pubDatetime: 2026-05-22T09:00:00Z
 title: "Who Are You? MCP, OAuth, and Entra ID Identity Passthrough"
 postSlug: mcp-oauth-entra-identity-passthrough
-featured: false
+featured: true
 draft: false
 tags:
   - azure
