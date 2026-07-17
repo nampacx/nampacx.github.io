@@ -1,6 +1,7 @@
 allowBuilds:
   esbuild: true
   sharp: true
+verifyDepsBeforeRun: false
 minimumReleaseAgeExclude:
   - astro@6.3.7
   - astro@7.1.0
