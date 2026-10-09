@@ -4,7 +4,9 @@
   "version": "5.5.1",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro check && astro build && pagefind --site dist && cp -r dist/pagefind public/",
+    "build": "node .github/skills/blog-creation/scripts/build-site.mjs",
+    "blog:new": "node .github/skills/blog-creation/scripts/create-blog-post.mjs",
+    "blog:validate": "node .github/skills/blog-creation/scripts/validate-blog-post.mjs",
     "preview": "astro preview",
     "sync": "astro sync",
     "astro": "astro",
@@ -44,6 +46,7 @@
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.7.2",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.51.0"
+    "typescript-eslint": "^8.51.0",
+    "yaml": "^2.9.0"
   }
 }

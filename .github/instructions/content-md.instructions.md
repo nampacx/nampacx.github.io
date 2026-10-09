@@ -23,7 +23,7 @@ author: Michael Kokonowskyj
 pubDatetime: 2024-01-20T14:23:00Z
 title: Your Blog Post Title
 postSlug: optional-custom-slug
-featured: false
+featured: true
 draft: false
 tags:
   - tag1
@@ -48,21 +48,25 @@ description: A brief description of your blog post that appears in meta tags and
 
 ## Content Guidelines
 
-### Writing Style
+### Voice and Point of View
 
-- Write in a conversational, developer-friendly, more relaxed and funny tone
-- Use clear, concise language
-- Include practical examples and code snippets
-- Explain technical concepts with context
-- Try to break down complex ideas into simple steps 
-- Use humor and personal anecdotes where appropriate to engage readers
+- Write in Michael's first-person voice when describing a project, experiment, or lesson learned. Make clear what he tried and what actually happened.
+- Open with a specific motivation, question, conversation, or problem that led to the work. Get to the technical subject quickly; avoid generic scene-setting.
+- Let the enthusiasm for technology come through as curiosity and excitement about exploring an idea, trying things, and discovering how they work. Make the reader feel they are following the investigation, not reading a detached product announcement.
+- Keep the tone approachable and candid. Light humor, understatement, and occasional asides are part of the voice, but use them naturally rather than forcing a joke into every section.
+- Use emojis as colorful emphasis in headings and occasional key statements when they reinforce the point or mood. Keep them intentional and readable; they should add personality, not compete with the technical content.
+- Be honest about what was easy, confusing, surprising, broken, or still limited. Prefer concrete observations over hype or broad claims.
+- Explain technical details clearly for fellow developers without flattening the post into a formal manual. Define unfamiliar terms when readers need them, and connect implementation choices to the problem they solve.
+- Keep prose direct and readable. Vary sentence length; use contractions and conversational phrasing when they sound natural. Avoid padded introductions, repeated summaries, and marketing language.
 
-### Structure
+### Structure and Flow
 
-- Start with a clear introduction
-- Use descriptive headings (H2, H3) to organize content
-- Include code examples with proper syntax highlighting
-- End with a conclusion or key takeaways
+- Start the body with a concise `## TL;DR` section immediately after the frontmatter. Summarize the problem or idea, what was explored or built, and the key result or lesson in a few quick bullets so readers can get the value at a glance.
+- Let the story determine the structure. For exploratory posts, take the reader along the journey: the initial question, the experiments and obstacles, the discoveries, and where things landed. A reference-style post can use a more direct walkthrough while still making the investigation and outcome clear.
+- Use descriptive H2 and H3 headings that help readers scan the post. Headings may be conversational, but should still make the section's subject clear.
+- Do not require a fixed "Introduction" or "Conclusion" section. End with the useful takeaway, current state, limitation, or next step that fits the post; invite readers to compare notes when that feels genuine.
+- Include the relevant repository or working demo when one exists. Use screenshots, diagrams, and code examples to make the actual system or important steps easier to understand, not as decoration.
+- Keep technical claims grounded in what was tested. Distinguish personal observations, preview behavior, and documented guarantees; link to primary documentation for details that may change.
 
 ### Code Blocks
 
@@ -77,32 +81,23 @@ function example(): string {
 
 ### Images and Assets
 
-- Place images in `public/assets/` directory
-- Reference images using relative paths: `../../../public/assets/image.png`
-- Use inline styles for image sizing: `<img alt="description" src="path" style="all: unset; height: 20px">`
-- Always include meaningful alt text for accessibility
+- Keep post images with the existing blog assets under `src/assets/images/` and follow the relative Markdown paths used by neighboring posts (for example, `../../assets/images/<folder>/<image>.png`).
+- Prefer Markdown image syntax with concise, descriptive alt text that explains what the image shows. Avoid raw HTML and inline styles unless Markdown cannot express a necessary presentation requirement.
+- Use screenshots of the real app or relevant diagrams when they clarify the workflow, result, or architecture. Do not add images merely to break up text.
 
 ### Links
 
-- Use descriptive link text
-- For external links, consider opening in new tab
-- Internal links should use relative paths
+- Use descriptive link text and link directly to repositories, demos, or primary documentation when relevant.
+- Use the site's established absolute routes for internal post links (for example, `/posts/<slug>`). Avoid fragile filesystem-relative links for site navigation.
 
-### Hints
+### Components in Posts
 
-- use the hint component from `src/components/Hint.astro` like it's done in `src/content/blog/give-it-a-face-to-talk-to.mdx` (lines 445-460)
-- use the types of the components appropriate: "success" | "warning" | "info" | "error"
-- put the import for hint component at the top of the file
-- if the file is a `.mdx` file, you can use the component directly in the markdown content, else rename the file-extension from `md` to `mdx`
+- Use `.mdx` only when a component is genuinely useful to the post. Before using one, verify that it exists, check its current API, and follow a nearby example in the repository.
+- Keep ordinary prose, code, and images in Markdown; do not convert a post to MDX just to use raw HTML for styling.
 
 ## Tag Guidelines
 
-Common tags to use:
-
-- **Languages**: `react`, `typescript`, `c#`, `python`
-- **Tools**: `github`, `vscode`, `docker`, `testing`
-- **Services**: `power platform`, `azure`, `foundry`, `copilot`
-- **Personal**: `michaelkokonowskyj`, `nampacx`, `mikokono`
+Reuse the spelling and casing of relevant tags from existing posts. Choose a small set that describes the technology and subject; do not add personal-name tags or generic tags unless they are already part of the site's established taxonomy and genuinely help discovery.
 
 ## SEO Best Practices
 
@@ -129,15 +124,13 @@ tags:
 description: Learn how to create reusable and maintainable React components with modern patterns and best practices.
 ---
 
-## Introduction
+## TL;DR
 
-Brief introduction explaining what this post covers and why it's important.
+- What I set out to explore or solve
+- What I built or tried, and the main discovery
+- The practical result or takeaway
 
-## Main Content
-
-### Subheading 1
-
-Content with explanations, examples, and code snippets.
+Then tell the story: what sparked the idea, how the exploration unfolded, what surprised you, and where it landed. Use headings that fit the journey rather than copying a fixed template; add an emoji where it gives a heading or key moment the right emphasis.
 
 ```typescript
 // Example code with proper syntax highlighting
@@ -146,16 +139,6 @@ function MyComponent(): JSX.Element {
 }
 ```
 ````
-
-### Subheading 2
-
-More content with images if needed:
-
-<img alt="React logo" src="../../../public/assets/React-icon.svg" style="all: unset; height: 20px">
-
-## Conclusion
-
-Summary of key points and next steps.
 
 ```
 
@@ -168,7 +151,11 @@ Before publishing, ensure:
 - [ ] Images have proper alt text
 - [ ] Code blocks have language specification
 - [ ] Links are working and properly formatted
-- [ ] Content is proofread for grammar and spelling
+- [ ] A concise TL;DR appears immediately after the frontmatter and gives readers the key information quickly
+- [ ] The post conveys curiosity and discovery, with a clear account of what was tried and learned
+- [ ] Emojis are used intentionally to add color or emphasize key moments
+- [ ] The post sounds candid and specific, with humor only where it feels natural
+- [ ] Technical claims match what was tested and any changeable behavior is qualified
 - [ ] Description accurately summarizes the post
 - [ ] Draft is set to `false` when ready to publish
 ```
