@@ -3,7 +3,7 @@ author: Michael Kokonowskyj
 pubDatetime: 2026-10-09T09:00:00Z
 title: "One Gateway for Foundry, Local Models, and Agents"
 postSlug: azure-apim-llm-gateway-heimdal
-featured: false
+featured: true
 draft: false
 tags:
   - azure
