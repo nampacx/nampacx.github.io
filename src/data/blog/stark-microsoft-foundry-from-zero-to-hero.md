@@ -3,7 +3,7 @@ author: Michael Kokonowskyj
 pubDatetime: 2026-10-16T10:00:00Z
 title: "STARK: Learning Microsoft Foundry, from Dummy to Vision"
 featured: true
-draft: true
+draft: false
 tags:
   - azure
   - foundry

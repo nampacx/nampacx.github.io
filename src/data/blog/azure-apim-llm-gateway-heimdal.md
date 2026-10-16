@@ -4,7 +4,7 @@ pubDatetime: 2026-10-09T09:00:00Z
 title: "One Gateway for Foundry, Local Models, and Agents"
 postSlug: azure-apim-llm-gateway-heimdal
 featured: true
-draft: true
+draft: fasle
 tags:
   - azure
   - apim
