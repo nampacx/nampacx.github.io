@@ -82,6 +82,10 @@ One thing I didn't leave to the model: remembering to work through every company
 
 Plain code for the loop, an agent for the research. C# has been handling `foreach` without a motivational prompt for years. The [implementation is here](https://github.com/nampacx/Foundry-Stock-Watch-Agent/blob/main/src/stockwatch-agent/Support.cs).
 
+That one-company-at-a-time default has a backstory: the hosted agent kept running into `429 Too Many Requests` responses from the model. Apparently, researching companies was going faster than my quota could keep up with. Fast agent, small quota. 😭
+
+So I limited the research to one company at a time and added **exponential backoff with jitter** for rate-limit retries. Being a good guy and following best practices, even when all I really wanted was my report. The retry delay grows after each failed attempt, with some randomness so concurrent retries don't all land together. It doesn't magically create more quota, but it does stop the retries from making a busy service even busier.
+
 And before anyone puts their savings behind it: this is web search plus generated summaries, not a licensed financial data feed. Check the sources. The reports can be wrong or incomplete, and they aren't investment advice.
 
 ## The Agent Gets Its Own Identity
