@@ -1,6 +1,7 @@
 import { defineConfig, envField, fontProviders } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
 import sitemap from "@astrojs/sitemap";
+import mermaid from "astro-mermaid";
 import remarkToc from "remark-toc";
 import remarkCollapse from "remark-collapse";
 import {
@@ -13,8 +14,24 @@ import { SITE } from "./src/config";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://mikokono.de/',
+  site: "https://mikokono.de/",
   integrations: [
+    mermaid({
+      theme: "neutral",
+      autoTheme: true,
+      mermaidConfig: {
+        startOnLoad: false,
+        logLevel: "error",
+        securityLevel: "strict",
+        sequence: {
+          actorMargin: 24,
+          actorFontSize: 18,
+          messageFontSize: 18,
+          noteFontSize: 16,
+          wrap: true,
+        },
+      },
+    }),
     sitemap({
       filter: page => SITE.showArchives || !page.endsWith("/archives"),
     }),
