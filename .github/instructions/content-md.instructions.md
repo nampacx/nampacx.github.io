@@ -9,9 +9,9 @@ This document outlines the guidelines and structure for creating blog posts in A
 ## File Structure and Naming
 
 - **Location**: All blog posts must be placed in `src/data/blog/`
-- **File Extension**: Use `.md` for standard markdown or `.mdx` for markdown with JSX components
+- **File Extension**: Use `.md`. The blog collection only loads Markdown; MDX is not configured
 - **Naming Convention**: Use kebab-case for filenames (e.g., `my-awesome-blog-post.md`)
-- **Slug**: The filename will be used as the URL slug unless overridden in frontmatter
+- **Slug**: The filename is the URL slug
 
 ## Required Frontmatter
 
@@ -22,7 +22,6 @@ Every blog post must include YAML frontmatter at the top of the file with the fo
 author: Michael Kokonowskyj
 pubDatetime: 2024-01-20T14:23:00Z
 title: Your Blog Post Title
-postSlug: optional-custom-slug
 featured: true
 draft: false
 tags:
@@ -38,12 +37,12 @@ description: A brief description of your blog post that appears in meta tags and
 - **author**: Author name (default: "Michael Kokonowskyj")
 - **pubDatetime**: Publication date and time in ISO 8601 format (YYYY-MM-DDTHH:MM:SSZ)
 - **title**: The blog post title (used in SEO and navigation)
-- **postSlug**: Optional custom URL slug (defaults to filename if not provided)
 - **featured**: Boolean indicating if post should be featured on homepage
 - **draft**: Boolean indicating if post is a draft (won't be published if true)
 - **tags**: Array of tags for categorization and filtering
 - **description**: Brief description for SEO meta tags and post previews
 - **ogImage**: Optional custom Open Graph image (path or URL)
+- **modDatetime**: Optional last-modified date in ISO 8601 format
 - **canonicalURL**: Optional canonical URL for SEO
 
 ## Content Guidelines
@@ -92,8 +91,7 @@ function example(): string {
 
 ### Components in Posts
 
-- Use `.mdx` only when a component is genuinely useful to the post. Before using one, verify that it exists, check its current API, and follow a nearby example in the repository.
-- Keep ordinary prose, code, and images in Markdown; do not convert a post to MDX just to use raw HTML for styling.
+- Posts are plain Markdown; there are no embeddable components. Avoid raw HTML unless Markdown cannot express what is needed.
 
 ## Tag Guidelines
 
@@ -114,7 +112,6 @@ Reuse the spelling and casing of relevant tags from existing posts. Choose a sma
 author: Michael Kokonowskyj
 pubDatetime: 2024-01-20T14:23:00Z
 title: How to Create Amazing React Components
-postSlug: amazing-react-components
 featured: false
 draft: false
 tags:
