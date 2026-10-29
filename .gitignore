@@ -27,3 +27,6 @@ pnpm-debug.log*
 
 public/pagefind
 src/assets/images/draft
+
+# claude code local settings
+.claude/
